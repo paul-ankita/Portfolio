@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ankita Paul</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a22a1bd234.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div id = "header">
@@ -21,18 +22,18 @@
           </nav>
           <div class="header-text">
               <p>Software Quality Assurance Engineer</p>
-              <h1>Hi, I'm Ankita Paul from Bangladesh</h1>
+              <h1>Hi, I'm Ankita Paul from<br>Bangladesh</h1>
           </div>
       </div>
   </div>
   <!---------------------------------about me------------------------------------------->
   <div class="about">
-      <div class="container">
-          <div class = "row">
+  <div class="container">
+      <div class = "row">
               <div class="about-col-1">
                   <img src="images/user.png" alt="">
               </div>
-              <div class="about-col-2">
+          <div class="about-col-2">
                   <h1 class = "sub-title">About Me</h1>
                   <p>Lorem ipsum dolor sit amet. Qui sapiente natus aut nostrum excepturi qui deleniti eligendi! Et
                       laboriosam reprehenderit non magnam modi sed repellat sunt. Non rerum neque est magni magni qui
@@ -40,26 +41,26 @@
                       id veniam rerum ad nihil dolore.</p>
                   <div class="tab-titles">
                       <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
-                      <p class="tab-links">Experience</p>
-                      <p class="tab-links">Education</p>
-              </div>
-              <div class="tab-contents active-tab">
+                      <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                      <p class="tab-links" onclick="opentab('education')">Education</p>
+                  </div>
+              <div class="tab-contents active-tab" id="skills">
                   <ul>
                       <li><span>Manual Testing</span><br> Execute Manual Testing for Web Applications</li>
                       <li><span>Manual Testing</span><br> Execute Manual Testing for Web Applications</li>
                       <li><span>Manual Testing</span><br> Execute Manual Testing for Web Applications</li>
                   </ul>
               </div>
-              <div class="tab-contents">
+              <div class="tab-contents" id="experience">
                    <ul>
-                      <li><span>Manual Testing</span><br> Execute Manual Testing for Web Applications</li>
+                      <li><span>Software Quality Assurance Engineer</span><br>BD Funnel Builder</li>
                       <li><span>Manual Testing</span><br> Execute Manual Testing for Web Applications</li>
                       <li><span>Manual Testing</span><br> Execute Manual Testing for Web Applications</li>
                    </ul>
               </div>
-              <div class="tab-contents">
+              <div class="tab-contents" id="education">
                    <ul>
-                      <li><span>Manual Testing</span><br> Execute Manual Testing for Web Applications</li>
+                      <li><span>Bachelor of Science in Computer Science and Engineering</span><br> University of Asia Pacific</li>
                       <li><span>Manual Testing</span><br> Execute Manual Testing for Web Applications</li>
                       <li><span>Manual Testing</span><br> Execute Manual Testing for Web Applications</li>
                    </ul>
@@ -69,7 +70,115 @@
   </div>
   </div>
 
+  <!---------------------------------Service------------------------------------------->
 
+  <div id="services">
+      <div class="container">
+          <h1 class="sub-title">My Services</h1>
+          <div class="services-list">
+
+              <div>
+                  <i class="fa-solid fa-code"></i>
+                  <h2>Quality Assuarace</h2>
+                  <p>Lorem ipsum dolor sit amet. Qui sapiente natus aut nostrum excepturi qui deleniti eligendi!</p>
+                  <a href="#">Learn more</a>
+              </div>
+              <div>
+                  <i class="fa-regular fa-crop"></i>
+                  <h2>Product Quality</h2>
+                  <p>Lorem ipsum dolor sit amet. Qui sapiente natus aut nostrum excepturi qui deleniti eligendi!</p>
+                  <a href="#">Learn more</a>
+              </div>
+              <div>
+                  <i class="fa-brands fa-app-store"></i>
+                  <h2>Test Automation</h2>
+                  <p>Lorem ipsum dolor sit amet. Qui sapiente natus aut nostrum excepturi qui deleniti eligendi!</p>
+                  <a href="#">Learn more</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!---------------------------------portfolio------------------------------------------->
+  <div id="portfolio">
+      <div class="container">
+          <h1 class="sub-title">
+              My Work
+          </h1>
+          <div class="work-list">
+              <div class="work">
+                  <img src="images/work-1.png">
+                  <div class="layer">
+                      <h3> BD Funnel Builder</h3>
+                      <p>Lorem ipsum dolor sit amet. Qui sapiente natus aut nostrum excepturi qui deleniti eligendi!</p>
+                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="images/work-2.png">
+                  <div class="layer">
+                      <h3>Taskuna</h3>
+                      <p> dfgiudf dufgs dfuigsdfghifuhgif iugb ddfhgiufhg iufhifj  idhgi dfhgfgidhgiu </p>
+                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="images/work-3.png">
+                  <div class="layer">
+                      <h3>Meeting Nest</h3>
+                      <p> dfgiudf dufgs dfuigsdfghifuhgif iugb ddfhgiufhg iufhifj  idhgi dfhgfgidhgiu </p>
+                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+              </div>
+          </div>
+          <a href="#" class="btn">See More</a>
+      </div>
+  </div>
+
+  <!---------------------------------portfolio------------------------------------------->
+  <div id="contact">
+      <div class="container">
+          <div class="row">
+              <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p><i class="fa-solid fa-paper-plane"></i>contact@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i>01758717652</p>
+                  <div class="social-icon">
+                      <a href="https://www.facebook.com/ankitanpaul"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="#"><i class="fa-brands fa-whatsapp"></i></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                  <a HREF="images/Ankita_Paul_Resume.pdf" download class="btn btn2">Download CV</a>
+              </div>
+              <div class="contact-right">
+                  <form>
+                      <input type="text" name="text" placeholder="Enter Your Name" required>
+                      <input type="email" name="email" placeholder="Enter Your Email" required>
+                      <textarea name="Massage" rows="6" placeholder="Type Your Masssage" ></textarea>
+                      <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>Copyright © Paul.<i class="fa-solid fa-heart"></i></p>
+      </div>
+  </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-links");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
 
 </body>
 </html>
