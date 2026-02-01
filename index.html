@@ -13,32 +13,37 @@
       <div class="container">
           <nav>
               <img src="images/logooopng.png" class="logo" alt="">
-              <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">About</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Contact</a></li>
+              <ul id="sidemenu">
+                  <li><a href="#header">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
               </ul>
+              <i class="fa-solid fa-bars" onclick="openmenu()"></i>
           </nav>
           <div class="header-text">
-              <p>Software Quality Assurance Engineer</p>
-              <h1>Hi, I'm Ankita Paul from<br>Bangladesh</h1>
+              <p>Hi, I'm Ankita Paul,</p>
+              <h1>Passionate <span id="typing"></span></h1>
           </div>
       </div>
   </div>
   <!---------------------------------about me------------------------------------------->
-  <div class="about">
-  <div class="container">
+  <div id = "about">
+  <div class = "container">
       <div class = "row">
               <div class="about-col-1">
-                  <img src="images/user.png" alt="">
+                  <img src="images/users.png" alt="">
               </div>
           <div class="about-col-2">
                   <h1 class = "sub-title">About Me</h1>
-                  <p>Lorem ipsum dolor sit amet. Qui sapiente natus aut nostrum excepturi qui deleniti eligendi! Et
-                      laboriosam reprehenderit non magnam modi sed repellat sunt. Non rerum neque est magni magni qui
-                      galisum possimus At velit labore. Eos cumque tenetur quo dolorem repudiandae rem delectus veniam
-                      id veniam rerum ad nihil dolore.</p>
+                  <p>Software Quality Assurance Engineer with solid experience in manual, automation, performance,
+                      and API testing for SaaS, LMS, CRM, and web-based platforms. Strong
+                      background in test planning, defect lifecycle management, and cross‑team collaboration.
+                      Hands-on with Cypress automation, JMeter performance testing, and analytics validation.
+                      Known for reliability, clear communication, and a practical, detail-oriented testing
+                      approach.</p>
                   <div class="tab-titles">
                       <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
                       <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -46,23 +51,29 @@
                   </div>
               <div class="tab-contents active-tab" id="skills">
                   <ul>
-                      <li><span>Manual Testing</span><br> Execute Manual Testing for Web Applications</li>
-                      <li><span>Manual Testing</span><br> Execute Manual Testing for Web Applications</li>
-                      <li><span>Manual Testing</span><br> Execute Manual Testing for Web Applications</li>
+                      <li><p>Testing & QA</p><span>Manual Testing, Regression Testing, Smoke & Sanity Testing, Functional & Integration
+                          Testing, Cross‑browser & Cross‑platform Testing, Test Case Design & Execution, Defect
+                          Tracking & Reporting, Test Documentation</span>></li>
+                      <li><p>Automation & Performance</p><span> Cypress, Selenium WebDriver (Java), JMeter, Locust (basic), Appium (basic)</span></li>
+                      <li><p>API & Backend</p><span> REST API Testing, Postman, MySQL, MongoDB, Redis (basic understanding)</span></li>
+                      <li><p>Programming & Scripting</p><span>Java, JavaScript, Python, HTML, CSS</span></li>
+                      <li><p>Tools & Workflow</p><span>Jira, ClickUp, Git, Agile/Scrum</span></li>
+                      <li><p>Analytics Validation</p><span>Google Analytics, Google Tag Manager, Google Clarity, Facebook Pixel, Ad Manager,
+                          Event Manager</span></li>
+                      <li><p>Tools & Workflow</p><span>Jira, ClickUp, Git, Agile/Scrum</span></li>
                   </ul>
               </div>
               <div class="tab-contents" id="experience">
                    <ul>
-                      <li><span>Software Quality Assurance Engineer</span><br>BD Funnel Builder</li>
-                      <li><span>Manual Testing</span><br> Execute Manual Testing for Web Applications</li>
-                      <li><span>Manual Testing</span><br> Execute Manual Testing for Web Applications</li>
+                       <li><p>Software Quality Assurance Engineer</p><span>BD Funnel Builder    </span><span>Dec, 2023 - Jan, 2025</span></li>
+                       <li><p>Associate – Data Processing</p><span>Quantanite Bangladesh</span><span>Feb, 2022 - Dec, 2023</span></li>
                    </ul>
               </div>
               <div class="tab-contents" id="education">
                    <ul>
-                      <li><span>Bachelor of Science in Computer Science and Engineering</span><br> University of Asia Pacific</li>
-                      <li><span>Manual Testing</span><br> Execute Manual Testing for Web Applications</li>
-                      <li><span>Manual Testing</span><br> Execute Manual Testing for Web Applications</li>
+                       <li><p>Bachelor of Science in Computer Science and Engineering</p><span> University of Asia Pacific</span></li>
+                      <li><p>Higher Secondary Certificate (Science)</p><span>Kushtia Govt. Girls College,kushtia</span></li>
+                       <li><p>Manual Testing</p><span> Execute Manual Testing for Web Applications</span></li>
                    </ul>
               </div>
           </div>
@@ -75,29 +86,52 @@
   <div id="services">
       <div class="container">
           <h1 class="sub-title">My Services</h1>
+
           <div class="services-list">
 
-              <div>
+              <div class="service-card">
                   <i class="fa-solid fa-code"></i>
-                  <h2>Quality Assuarace</h2>
-                  <p>Lorem ipsum dolor sit amet. Qui sapiente natus aut nostrum excepturi qui deleniti eligendi!</p>
-                  <a href="#">Learn more</a>
+                  <h2>Quality Assurance</h2>
+
+                  <input type="checkbox" id="toggle1">
+                  <p class="service-text">
+                      Lorem ipsum dolor sit amet. Qui sapiente natus aut nostrum excepturi qui deleniti eligendi!
+                      Additional hidden content goes here. More explanation about product quality.
+                  </p>
+
+                  <label for="toggle1" class="expand-btn"><i class="fa-solid fa-angle-down"></i></label>
               </div>
-              <div>
-                  <i class="fa-regular fa-crop"></i>
+
+              <div class="service-card">
+                  <i class="fa-solid fa-crop"></i>
                   <h2>Product Quality</h2>
-                  <p>Lorem ipsum dolor sit amet. Qui sapiente natus aut nostrum excepturi qui deleniti eligendi!</p>
-                  <a href="#">Learn more</a>
+
+                  <input type="checkbox" id="toggle2">
+                  <p class="service-text">
+                      Lorem ipsum dolor sit amet. Qui sapiente natus aut nostrum excepturi qui deleniti eligendi!
+                      Additional hidden content goes here. More explanation about product quality.
+                  </p>
+
+                  <label for="toggle2" class="expand-btn"><i class="fa-solid fa-angle-down"></i></label>
               </div>
-              <div>
-                  <i class="fa-brands fa-app-store"></i>
+
+              <div class="service-card">
+                  <i class="fa-regular fa-star"></i>
                   <h2>Test Automation</h2>
-                  <p>Lorem ipsum dolor sit amet. Qui sapiente natus aut nostrum excepturi qui deleniti eligendi!</p>
-                  <a href="#">Learn more</a>
+
+                  <input type="checkbox" id="toggle3">
+                  <p class="service-text">
+                      Lorem ipsum dolor sit amet. Qui sapiente natus aut nostrum excepturi qui deleniti eligendi!
+                      Additional hidden content goes here. More explanation about product quality.
+                  </p>
+
+                  <label for="toggle3" class="expand-btn"><i class="fa-solid fa-angle-down"></i></label>
               </div>
+
           </div>
       </div>
   </div>
+
   <!---------------------------------portfolio------------------------------------------->
   <div id="portfolio">
       <div class="container">
@@ -110,7 +144,7 @@
                   <div class="layer">
                       <h3> BD Funnel Builder</h3>
                       <p>Lorem ipsum dolor sit amet. Qui sapiente natus aut nostrum excepturi qui deleniti eligendi!</p>
-                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                      <a href="https://bdfunnelbuilder.com/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                   </div>
               </div>
               <div class="work">
@@ -130,11 +164,37 @@
                   </div>
               </div>
           </div>
-          <a href="#" class="btn">See More</a>
+          <div class="more">
+              <div class="work">
+                  <img src="images/work-3.png">
+                  <div class="layer">
+                      <h3>Meeting Nest</h3>
+                      <p> dfgiudf dufgs dfuigsdfghifuhgif iugb ddfhgiufhg iufhifj  idhgi dfhgfgidhgiu </p>
+                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="images/work-3.png">
+                  <div class="layer">
+                      <h3>Meeting Nest</h3>
+                      <p> dfgiudf dufgs dfuigsdfghifuhgif iugb ddfhgiufhg iufhifj  idhgi dfhgfgidhgiu </p>
+                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+              </div>
+              <div class="work">
+                  <img src="images/work-3.png">
+                  <div class="layer">
+                      <h3>Meeting Nest</h3>
+                      <p> dfgiudf dufgs dfuigsdfghifuhgif iugb ddfhgiufhg iufhifj  idhgi dfhgfgidhgiu </p>
+                      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
+              </div>
+          </div>
+          <a href="javascript:void(0)" class="btn" id="seeMoreBtn">See More</a>
       </div>
   </div>
 
-  <!---------------------------------portfolio------------------------------------------->
+  <!---------------------------------contact------------------------------------------->
   <div id="contact">
       <div class="container">
           <div class="row">
@@ -143,9 +203,10 @@
                   <p><i class="fa-solid fa-paper-plane"></i>contact@gmail.com</p>
                   <p><i class="fa-solid fa-phone"></i>01758717652</p>
                   <div class="social-icon">
-                      <a href="https://www.facebook.com/ankitanpaul"><i class="fa-brands fa-facebook"></i></a>
-                      <a href="#"><i class="fa-brands fa-whatsapp"></i></i></a>
-                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                      <a href="https://www.facebook.com/ankitanpaul" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                      <a href="https://github.com/paul-ankita" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+                      <a href="https://www.linkedin.com/in/0paulankita/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
                   </div>
                   <a HREF="images/Ankita_Paul_Resume.pdf" download class="btn btn2">Download CV</a>
               </div>
@@ -162,6 +223,7 @@
       <div class="copyright">
           <p>Copyright © Paul.<i class="fa-solid fa-heart"></i></p>
       </div>
+      <button id="backTop" title="Go To Top"><i class="fa-solid fa-arrow-up"></i></button>
   </div>
 
 <script>
@@ -179,6 +241,89 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+<script>
+    const texts = [
+        "Software Quality Assurance Engineer",
+        "Manual & Automation Tester",
+        "Quality-Focused Problem Solver"
+    ];
 
+    let textIndex = 0;
+    let charIndex = 0;
+
+    function typeEffect() {
+        if (charIndex < texts[textIndex].length) {
+            typing.textContent += texts[textIndex][charIndex++];
+            setTimeout(typeEffect, 100);
+        } else {
+            setTimeout(eraseEffect, 1500);
+        }
+    }
+
+    function eraseEffect() {
+        if (charIndex > 0) {
+            typing.textContent = texts[textIndex].substring(0, --charIndex);
+            setTimeout(eraseEffect, 50);
+        } else {
+            textIndex = (textIndex + 1) % texts.length;
+            setTimeout(typeEffect, 500);
+        }
+    }
+
+    const typing = document.getElementById("typing");
+    typeEffect();
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+    document.querySelectorAll("#sidemenu a").forEach(item => {
+        item.addEventListener("click", () => {
+            closemenu();
+        });
+    });
+</script>
+<script>
+      const seeMoreBtn = document.getElementById("seeMoreBtn");
+      const moreWork = document.querySelector(".more");
+
+      seeMoreBtn.addEventListener("click", () => {
+          moreWork.classList.toggle("show");
+
+          if (moreWork.classList.contains("show")) {
+              seeMoreBtn.textContent = "See Less";
+          } else {
+              seeMoreBtn.textContent = "See More";
+          }
+      });
+</script>
+
+<script>
+    const Topbutton = document.getElementById("backTop");
+
+    window.addEventListener("scroll",() => {
+        if (window.scrollY>300){
+            Topbutton.classList.add("show");
+        }
+        else {
+            Topbutton.classList.remove("show");
+        }
+    });
+
+    Topbutton.addEventListener("click", () =>{
+        window.scrollTo(
+            {
+                top:0,
+                behavior: "smooth"
+            }
+        );
+    });
+</script>
 </body>
 </html>
