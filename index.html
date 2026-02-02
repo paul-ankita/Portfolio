@@ -14,7 +14,6 @@
           <nav>
               <img src="images/logooopng.png" class="logo" alt="">
               <ul id="sidemenu">
-                  <li><a href="">Home</a></li>
                   <li><a href="#about">About</a></li>
                   <li><a href="#services">Services</a></li>
                   <li><a href="#portfolio">Portfolio</a></li>
@@ -270,8 +269,8 @@
                   <a HREF="images/Ankita_Paul_Resume.pdf" download class="btn btn2">Download CV</a>
               </div>
               <div class="contact-right">
-                  <form>
-                      <input type="text" name="text" placeholder="Enter Your Name" required>
+                  <form name="portfolio contact form">
+                      <input type="text" name="Name" placeholder="Enter Your Name" required>
                       <input type="email" name="email" placeholder="Enter Your Email" required>
                       <textarea name="Massage" rows="6" placeholder="Type Your Masssage" ></textarea>
                       <button type="submit" class="btn btn2">Submit</button>
@@ -384,5 +383,27 @@
         );
     });
 </script>
+  <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxxRUPzY1OE51ABJ394bq7aMmOcXkIS3RpFAQA7_5ZILd2dGNjGVHwwLFuZCxXmJAMt6g/exec'
+      const form = document.forms['portfolio contact form']
+
+      form.addEventListener('submit', e => {
+          e.preventDefault()
+
+          fetch(scriptURL, {
+              method: 'POST',
+              mode: 'no-cors',
+              body: new FormData(form)
+          })
+              .then(() => {
+                  alert("Message sent successfully!");
+                  form.reset();
+              })
+              .catch(() => {
+                  alert("Something went wrong!");
+              });
+      })
+  </script>
+
 </body>
 </html>
