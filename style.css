@@ -573,6 +573,9 @@ nav .fa-solid{
         font-weight: 300;
         line-height: 1.6;
     }
+    .layer a{
+        margin: 10px auto;
+    }
     .contact-left, .contact-right{
         flex-basis: 100%;
     }

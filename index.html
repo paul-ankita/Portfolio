@@ -270,9 +270,9 @@
               </div>
               <div class="contact-right">
                   <form name="portfolio contact form">
-                      <input type="text" name="Name" placeholder="Enter Your Name" required>
+                      <input type="text" name="name" placeholder="Enter Your Name" required>
                       <input type="email" name="email" placeholder="Enter Your Email" required>
-                      <textarea name="Massage" rows="6" placeholder="Type Your Masssage" ></textarea>
+                      <textarea name="message" rows="6" placeholder="Type Your Message" ></textarea>
                       <button type="submit" class="btn btn2">Submit</button>
                   </form>
               </div>
@@ -283,10 +283,10 @@
       </div>
       <button id="backTop" title="Go To Top"><i class="fa-solid fa-arrow-up"></i></button>
   </div>
-
+<!--about me-->
 <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
 
     function opentab(tabname){
         for(tablink of tablinks){
@@ -299,6 +299,7 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+<!--header-->
 <script>
     const texts = [
         "Software Quality Assurance Engineer",
@@ -332,8 +333,9 @@
     typeEffect();
 
 </script>
+<!--sidemenu-->
 <script>
-    var sidemenu = document.getElementById("sidemenu")
+    const sidemenu = document.getElementById("sidemenu")
 
     function openmenu(){
         sidemenu.style.right = "0";
@@ -347,6 +349,7 @@
         });
     });
 </script>
+<!--my work see more button--->
 <script>
       const seeMoreBtn = document.getElementById("seeMoreBtn");
       const moreWork = document.querySelector(".more");
@@ -361,7 +364,7 @@
           }
       });
 </script>
-
+<!---back to top button-->
 <script>
     const Topbutton = document.getElementById("backTop");
 
@@ -383,8 +386,9 @@
         );
     });
 </script>
-  <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxxRUPzY1OE51ABJ394bq7aMmOcXkIS3RpFAQA7_5ZILd2dGNjGVHwwLFuZCxXmJAMt6g/exec'
+<!--google sheet-->
+<script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzgGguMoE-bZuyGVJGLRPyIzhc9b7MnffUQYx8bz4082nSfUs_SJ5-0EtIZQLYybggCPw/exec'
       const form = document.forms['portfolio contact form']
 
       form.addEventListener('submit', e => {
@@ -403,7 +407,7 @@
                   alert("Something went wrong!");
               });
       })
-  </script>
+</script>
 
 </body>
 </html>
