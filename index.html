@@ -198,7 +198,7 @@
           </h1>
           <div class="work-list">
               <div class="work">
-                  <img src="images/bdfb.png">
+                  <img src="images/bdfb.png" alt="">
                   <div class="layer">
                       <h3> BD Funnel Builder</h3>
                       <p>End‑to‑end testing of an all‑in‑one business and coding less website‑building platform.</p>
@@ -206,7 +206,7 @@
                   </div>
               </div>
               <div class="work">
-                  <img src="images/digital.png">
+                  <img src="images/digital.png" alt="">
                   <div class="layer">
                       <h3>Digital Uddokta Pathshala (LMS)</h3>
                       <p>Tested course management, enrollment, assessments, and progress tracking across web and mobile applications.</p>
@@ -214,7 +214,7 @@
                   </div>
               </div>
               <div class="work">
-                  <img src="images/ota.png">
+                  <img src="images/ota.png" alt="">
                   <div class="layer">
                       <h3>Online Tech Academy (CRM)</h3>
                       <p>QA testing for a membership-based e-learning platform, covering authentication, enrollment, subscription flow, and course access validation.</p>
@@ -224,7 +224,7 @@
           </div>
           <div class="more">
               <div class="work">
-                  <img src="images/mn.png">
+                  <img src="images/mn.png" alt="">
                   <div class="layer">
                       <h3>Meeting Nest (Scheduling Platform)</h3>
                       <p>Tested meeting scheduling, user management, and team activity tracking features.</p>
@@ -232,7 +232,7 @@
                   </div>
               </div>
               <div class="work">
-                  <img src="images/ck.png">
+                  <img src="images/ck.png" alt="">
                   <div class="layer">
                       <h3>Cashkeeper (Money Management Platform)</h3>
                       <p>Finance app that helps you easily track income, expenses, and
@@ -241,7 +241,7 @@
                   </div>
               </div>
               <div class="work">
-                  <img src="images/tk.png">
+                  <img src="images/tk.png" alt="">
                   <div class="layer">
                       <h3>Taskuna</h3>
                       <p>Task planning and project management platform that helps teams organize tasks, track progress, and collaborate efficiently</p>
@@ -264,14 +264,16 @@
                   <div class="social-icon">
                       <a href="https://www.facebook.com/ankitanpaul" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
                       <a href="https://github.com/paul-ankita" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
-                      <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+                      <a href="https://wa.me/8801758717652" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
                       <a href="https://www.linkedin.com/in/0paulankita/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
                   </div>
                   <a HREF="images/Ankita_Paul_Resume.pdf" download class="btn btn2">Download CV</a>
               </div>
               <div class="contact-right">
                   <form name="portfolio contact form">
-                      <input type="text" name="name" placeholder="Enter Your Name" required>
+                      <label>
+                          <input type="text" name="name" placeholder="Enter Your Name" required>
+                      </label>
                       <input type="email" name="email" placeholder="Enter Your Email" required>
                       <textarea name="message" rows="6" placeholder="Type Your Message" ></textarea>
                       <button type="submit" class="btn btn2">Submit</button>
@@ -288,7 +290,7 @@
       <div class="modal-content">
           <span class="close-btn">&times;</span>
           <h2>Message Sent Successfully!<br><i class="fa-solid fa-check"></i></h2>
-          <p>Thank you for contacting me. I will get back to you soon.</p>
+          <p>Thank you for reaching out to me. I will get back to you soon.</p>
       </div>
   </div>
 
@@ -298,6 +300,7 @@
     const tabcontents = document.getElementsByClassName("tab-contents");
 
     function opentab(tabname){
+        let tablink;
         for(tablink of tablinks){
             tablink.classList.remove("active-links");
         }
