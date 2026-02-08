@@ -314,8 +314,8 @@ nav ul li a:hover::after{
 .layer h3{
     font-weight: 600;
     font-size: 20px;
-    margin-top: 5px;
-    margin-bottom: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .layer a{
     margin-top: 20px;
@@ -630,6 +630,16 @@ nav .fa-solid{
     }
     .layer a{
         margin: 10px auto;
+    }
+    /*.layer{
+        margin: auto;
+    }*/
+    .work img{
+        width: 320px;
+        height: 200px;
+        border-radius: 10px;
+        display: block;
+        transition: transform 0.5s;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
